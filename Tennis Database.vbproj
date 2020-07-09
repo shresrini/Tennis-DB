@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B952F78-15EB-4916-8BDA-2E3CF24B3592}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Tennis_Database.My.MyApplication</StartupObject>
+    <RootNamespace>Tennis_Database</RootNamespace>
+    <AssemblyName>Tennis Database</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Tennis Database.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Tennis Database.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAddEdit.Designer.vb">
+      <DependentUpon>FrmAddEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppMain.Designer.vb">
+      <DependentUpon>frmAppMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAppMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCountry.Designer.vb">
+      <DependentUpon>frmCountry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCountry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMatchType.Designer.vb">
+      <DependentUpon>frmMatchType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMatchType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlayers.Designer.vb">
+      <DependentUpon>frmPlayers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlayers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldForms\250entry.Designer.vb">
+      <DependentUpon>250entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OldForms\250entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldForms\aussie entry.Designer.vb">
+      <DependentUpon>aussie entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OldForms\aussie entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldForms\davisentry.Designer.vb">
+      <DependentUpon>davisentry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OldForms\davisentry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldForms\fedentry.Designer.vb">
+      <DependentUpon>fedentry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OldForms\fedentry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldForms\finalsentry.Designer.vb">
+      <DependentUpon>finalsentry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OldForms\finalsentry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldForms\french entry.Designer.vb">
+      <DependentUpon>french entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OldForms\french entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.vb">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldForms\MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OldForms\MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OldForms\us entry.Designer.vb">
+      <DependentUpon>us entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OldForms\us entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldForms\wimbl entry.Designer.vb">
+      <DependentUpon>wimbl entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OldForms\wimbl entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldForms\wtafinals.Designer.vb">
+      <DependentUpon>wtafinals.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OldForms\wtafinals.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldForms\wtatourentry.Designer.vb">
+      <DependentUpon>wtatourentry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OldForms\wtatourentry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldForms\_1000entry.Designer.vb">
+      <DependentUpon>_1000entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OldForms\_1000entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldForms\_500entry.Designer.vb">
+      <DependentUpon>_500entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OldForms\_500entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tennis_DatabaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tennis_DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TourForm.Designer.vb">
+      <DependentUpon>TourForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TourForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAppMain.resx">
+      <DependentUpon>frmAppMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCountry.resx">
+      <DependentUpon>frmCountry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMatchType.resx">
+      <DependentUpon>frmMatchType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlayers.resx">
+      <DependentUpon>frmPlayers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldForms\250entry.resx">
+      <DependentUpon>250entry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldForms\aussie entry.resx">
+      <DependentUpon>aussie entry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldForms\davisentry.resx">
+      <DependentUpon>davisentry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldForms\fedentry.resx">
+      <DependentUpon>fedentry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldForms\finalsentry.resx">
+      <DependentUpon>finalsentry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldForms\french entry.resx">
+      <DependentUpon>french entry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldForms\MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldForms\us entry.resx">
+      <DependentUpon>us entry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldForms\wimbl entry.resx">
+      <DependentUpon>wimbl entry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldForms\wtafinals.resx">
+      <DependentUpon>wtafinals.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldForms\wtatourentry.resx">
+      <DependentUpon>wtatourentry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldForms\_1000entry.resx">
+      <DependentUpon>_1000entry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldForms\_500entry.resx">
+      <DependentUpon>_500entry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourForm.resx">
+      <DependentUpon>TourForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Tennis_DatabaseDataSet.xsc">
+      <DependentUpon>Tennis_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Tennis_DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Tennis_DatabaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Tennis_DatabaseDataSet.xss">
+      <DependentUpon>Tennis_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
